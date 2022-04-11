@@ -5,4 +5,4 @@
 
 # Demo
 
-<img src="tvnetFe_gif.gif" alt="gif">
+<img src="public/tvnetFe_gif.gif" alt="gif">
