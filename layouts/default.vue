@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gray-100 min-h-screen">
         <Title>Articles</Title>
-        <nav class="bg-blue-400 shadow text-lg px-6 py-6">
+        <nav class="bg-blue-400 shadow text-lg px-6 py-6 text-white">
             <div class="container mx-auto flex items-center justify-between px-6">
                 <div>
                     <a :href="'https://'+info2.domain"><img src="logo.png" alt="logo"></a>
@@ -22,19 +22,5 @@
     </div>
 </template>
 <script setup>
-// const info = ref([])
-
-// onMounted(() => {
-//     fetch('https://services.postimees.ee/rest/v1/sections/81')
-//     .then(response => response.json())
-//     .then(data => info.value = data)
-// })
-
 const { data: info2 } = await useAsyncData('info2', () => $fetch('https://services.postimees.ee/rest/v1/sections/81'))
 </script>
-
-<style scoped>
-    nav {
-        color: white;
-    }
-</style>
