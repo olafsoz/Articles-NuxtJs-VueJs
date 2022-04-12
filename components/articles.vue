@@ -11,7 +11,7 @@
                         <div v-html="article.articleLead[0].html" class="px-40"></div>
                     </div>
                     <div class="w-1/4 bg-blue-400 h-full flex items-center justify-center">
-                        <div class="circle flex items-center justify-center">{{ index + 1 }}</div>
+                        <div class="circle flex items-center justify-center rounded-full w-48 h-48 p-2.5 border-solid border-2 border-white text-center text-3xl">{{ index + 1 }}</div>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="h-72 flex text-white font-bold">
                     <div class="w-1/4 bg-blue-400 h-full flex items-center justify-center">
-                        <div class="circle flex items-center justify-center">{{ index + 1 }}</div>
+                        <div class="circle flex items-center justify-center rounded-full w-48 h-48 p-2.5 border-solid border-2 border-white text-center text-3xl">{{ index + 1 }}</div>
                     </div>
                     <div class="w-3/4 bg-black h-full flex items-center justify-center">
                         <div v-html="article.articleLead[0].html" class="px-40"></div>
@@ -40,18 +40,4 @@
     .image {
         filter: brightness(40%);
     }
-    /* .image {
-        background-image: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.18039) 100%);
-        background-image: -webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.18039) 100%);
-        background-image: -ms-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.18039) 100%);
-    } */
-    .circle {
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        padding: 10px;
-        border: 2px solid #ffffff;
-        text-align: center;
-        font: 32px Arial, sans-serif;
-      }
 </style>
